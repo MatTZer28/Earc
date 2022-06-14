@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/main_fragment">
+
+    <fragment
+        android:id="@+id/main_fragment"
+        android:name="com.example.earc.ui.main.MainFragment"
+        android:label="main_fragment"
+        tools:layout="@layout/main_fragment" >
+        <action
+            android:id="@+id/action_main_fragment_to_welcome_fragment"
+            app:destination="@id/welcome_fragment"
+            app:enterAnim="@anim/slide_left"
+            app:exitAnim="@anim/wait_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcome_fragment"
+        android:name="com.example.earc.ui.main.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/welcome_fragment">
+        <action
+            android:id="@+id/action_welcome_fragment_to_main_fragment"
+            app:destination="@id/main_fragment"
+            app:enterAnim="@anim/slide_left"
+            app:exitAnim="@anim/wait_anim" />
+    </fragment>
+</navigation>

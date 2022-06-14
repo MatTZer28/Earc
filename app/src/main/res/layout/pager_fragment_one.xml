@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEDD0">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:background="@drawable/orange_circle"
+            android:padding="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.048" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="388dp"
+            android:layout_height="442dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.107"
+            app:srcCompat="@drawable/screenshot"/>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="介紹"
+            android:textColor="#003366"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.713" />
+
+        <TextView
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="提供簡單快速的聲音測量，幫助分析環境噪音。下拉即可偵測當下分貝值；首次下拉啟動程式，將會開始執行背景偵測。"
+            android:textColor="#003366"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.843" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

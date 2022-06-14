@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Earc</string>
+    <string name="a_circle">A circle</string>
+
+    <string name="testing">測試文字</string>
+    <string name="understand">了解</string>
+    <string name="pull_to_detect">下拉檢測噪音程度</string>
+    <string name="pull_to_activate">下拉啟動噪音檢測</string>
+
+    <string name="table_name">NOISE_TABLE</string>
+    <string name="time_stamp">TS</string>
+    <string name="decibel">DECIBEL</string>
+        <string name="create_table">CREATE TABLE NOISE_TABLE (TS TIMESTAMP DEFAULT CURRENT_TIMESTAMP PRIMARY KEY, DECIBEL INT)</string>
+    <string name="query_data">SELECT strftime(\'%s\', TS), DECIBEL FROM NOISE_TABLE WHERE strftime(\'%s\', TS) between ? and ?</string>
+</resources>

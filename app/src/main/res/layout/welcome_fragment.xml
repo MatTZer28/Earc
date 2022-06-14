@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/welcome_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light"
+    tools:context=".ui.main.WelcomeFragment">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/welcome_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.lwj.widget.viewpagerindicator.ViewPagerIndicator
+        android:id="@+id/welcome_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="#FFEDD0"
+        app:layout_constraintBottom_toBottomOf="@+id/welcome_view_pager"
+        app:layout_constraintEnd_toStartOf="@+id/welcome_understand"
+        app:layout_constraintStart_toStartOf="parent"
+        app:vpi_default_color="@color/bright"
+        app:vpi_distance="50dp"
+        app:vpi_distanceType="BY_DISTANCE"
+        app:vpi_indicatorType="BEZIER"
+        app:vpi_length="24dp"
+        app:vpi_radius="8dp"
+        app:vpi_selected_color="@color/deep" />
+
+    <Button
+        android:id="@+id/welcome_understand"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="35dp"
+        android:text="@string/understand"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
